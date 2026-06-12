@@ -5,9 +5,60 @@ import java.util.Scanner;
 2) camel case naming convention
 
 */
+
+/*
+========================
+☕ HOW JAVA CODE RUNS
+========================
+1️⃣ Write code  → Source Code (.java)
+2️⃣ Compile     → Compiler converts to Bytecode (.class)
+3️⃣ Run         → JVM converts Bytecode → Native Code for OS
+
+📘 JVM = Java Virtual Machine
+- Acts as a translator between bytecode & OS.
+- Makes Java portable across Windows, Mac, Linux.
+
+✅ Write Once, Run Anywhere!
+
+📊 Java vs C++:
+- Java → Portable, uses JVM.
+- C++  → OS-specific, needs recompilation.
+- Java = Compiled + Interpreted
+- Python = Purely Interpreted
+
+Example:
+.java → (compile) → .class → (JVM) → runs on any OS!
+*/
+
 public class VariablesAndDataTypes {
 
     public static void main(String[] args) {
+
+        /*
+         * ========================
+         * 📘 SCANNER CLASS SUMMARY
+         * ========================
+         * - Used for taking input from user.
+         * - Must import: import java.util.Scanner;
+         * - Create object: Scanner sc = new Scanner(System.in);
+         * - Close when done: sc.close();
+         * 
+         * Common methods:
+         * nextInt() → int
+         * nextFloat() → float
+         * nextDouble() → double
+         * next() → single word String
+         * nextLine() → whole line String
+         * nextBoolean() → boolean
+         * nextByte() → byte
+         * nextShort() → short
+         * nextLong() → long
+         * 
+         * ⚠️ Important:
+         * - After nextInt(), if you use nextLine(), call sc.nextLine() once to clear
+         * leftover newline.
+         * - Always close the Scanner at the end.
+         */
 
         Scanner sc = new Scanner(System.in);
         /*
@@ -73,7 +124,6 @@ public class VariablesAndDataTypes {
         System.out.println("Hello " + userName.toUpperCase() + "\nWelcome to your coding journey :) ");
 
         // toUpperCase() is a string method here.. and \n is the newline character here
-        // !
 
         // product of the two numbers entered by the user
         System.out.print("Kindly enter the first number: ");
@@ -96,30 +146,5 @@ public class VariablesAndDataTypes {
 
         sc.close();
 
-        /*
-         * ========================
-         * 📘 SCANNER CLASS SUMMARY
-         * ========================
-         * - Used for taking input from user.
-         * - Must import: import java.util.Scanner;
-         * - Create object: Scanner sc = new Scanner(System.in);
-         * - Close when done: sc.close();
-         * 
-         * Common methods:
-         * nextInt() → int
-         * nextFloat() → float
-         * nextDouble() → double
-         * next() → single word String
-         * nextLine() → whole line String
-         * nextBoolean() → boolean
-         * nextByte() → byte
-         * nextShort() → short
-         * nextLong() → long
-         * 
-         * ⚠️ Important:
-         * - After nextInt(), if you use nextLine(), call sc.nextLine() once to clear
-         * leftover newline.
-         * - Always close the Scanner at the end.
-         */
     }
 }
